@@ -1,0 +1,38 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Principal</title>
+</head>
+<body>
+    {{#if log}}
+    <header>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/logout">Logout</a>&emsp;&emsp;
+            <a href="/apagar">Apagar</a>
+            <a href="/atualizar">atualiza</a>
+            <a href="/cadastrar">Cadastro</a>
+            <a href="/consultar">Consulta</a>
+            <a href="/listar">Listar</a>
+            <a>{{nome}}</a>
+        </nav>
+    </header>
+    {{else}}
+    <header>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/login">Login</a>
+        </nav>
+    </header>
+    {{/if}}
+    <main>
+        {{{body}}}
+    </main>
+    <footer>
+        
+    </footer>    
+</body>
+</html>
